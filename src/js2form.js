@@ -60,6 +60,8 @@
 		if (arguments.length < 3) delimiter = '.';
 		if (arguments.length < 4) nodeCallback = null;
 		if (arguments.length < 5) useIdIfEmptyName = false;
+        
+        rootNode = typeof rootNode == 'string' ? document.getElementById(rootNode) : rootNode;
 
 		var fieldValues,
 				formFieldsByName;
